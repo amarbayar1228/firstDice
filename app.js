@@ -38,7 +38,7 @@ function initGame() {
   document.getElementById("current-1").textContent = "0";
 
   // Тоглогчдын нэрийг буцааж гаргах
-  document.getElementById("name-0").textContent = "Player 1";
+  document.getElementById("name-0").textContent = "хатан";
   document.getElementById("name-1").textContent = "Player 2";
 
   document.querySelector(".player-0-panel").classList.remove("winner");
@@ -91,12 +91,12 @@ document.querySelector(".btn-hold").addEventListener("click", function() {
       scores[activePlayer];
 
     // Уг тоглогч хожсон эсэхийг (оноо нь 100-с их эсэх) шалгах
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 100) {
       // Тоглоомыг дууссан төлөвт оруулна
       isNewGame = false;
 
       // Ялагч гэсэн текстийг нэрнийх нь оронд гаргана
-      document.getElementById("name-" + activePlayer).textContent = "WINNER!!!";
+      document.getElementById("name-" + activePlayer).textContent = "Та хожлоо!!!";
       document
         .querySelector(".player-" + activePlayer + "-panel")
         .classList.add("winner");
@@ -108,7 +108,7 @@ document.querySelector(".btn-hold").addEventListener("click", function() {
       switchToNextPlayer();
     }
   } else {
-    alert("Тоглоом дууссан байна. NEW GAME товчийг дарж шинээр эхлэнэ үү");
+    alert("Тоглоом дууссан байна. Эхлүүлэх товчийг дарж шинээр эхлэнэ үү");
   }
 });
 
