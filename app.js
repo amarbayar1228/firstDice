@@ -38,8 +38,8 @@ function initGame() {
   document.getElementById("current-1").textContent = "0";
 
   // Тоглогчдын нэрийг буцааж гаргах
-  document.getElementById("name-0").textContent = "хатан";
-  document.getElementById("name-1").textContent = "Player 2";
+  document.getElementById("name-0").textContent = "Хатан";
+  document.getElementById("name-1").textContent = "Тоглогч";
 
   document.querySelector(".player-0-panel").classList.remove("winner");
   document.querySelector(".player-1-panel").classList.remove("winner");
